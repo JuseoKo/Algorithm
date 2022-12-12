@@ -8,6 +8,7 @@
 4. '구분자'.join(리스트) : 해당 리스트를 [0]구분자[1]구분자 ... 식으로 반환한다, 리스트의 요소는 str이여야함
 5. round(값, 자리수) : 반올림 하는 함수
 6. sys.stdin.readline() : input함수에 비해 빠르다, 원인은 prompt message와 개행문자 연산때문
+7. sort(key=기준값) : key값을 기준으로 정렬된다. 보통 람다와 같이쓰임
 
 # pypy3 vs python3
 

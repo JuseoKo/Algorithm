@@ -3,9 +3,7 @@ num = int(sys.stdin.readline())
 data_list = []
 
 def quick_sort(ar):
-    pivot, data, left, right = []
     if len(ar) <= 1:
-        # pivot, data, left, right = []
         return ar
     pivot, data = ar[0], ar[1:]
     left = [x for x in data if x <= pivot]
