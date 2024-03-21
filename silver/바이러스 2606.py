@@ -10,11 +10,14 @@ import sys
 
 N = int(sys.stdin.readline().rstrip())
 M = int(sys.stdin.readline().rstrip())
-graph = [[] for _ in range(N + 1)]
+# 그래프 초기화
+
+graph = [[] for i in range(N + 1)]
 for i in range(M):
     a, b = map(int, sys.stdin.readline().split())
     graph[a].append(b)
     graph[b].append(a)
+    pass
 
 # 방문 여부를 나타내는 리스트 초기화
 visited = [False] * (N + 1)

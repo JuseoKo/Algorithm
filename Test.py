@@ -1,16 +1,27 @@
+# 1번 : 컴퓨터 수
+# 2번 : 직접 연결되어 있는 컴퓨터 수
+# 3번 : 컴퓨터 연결 정보
 
-# # 평소에 안쓰던 함수
-# 1. split(슬라이싱할 문자) : 슬라이싱할 문자 사이에 있는 모든 문자열을 슬라이싱해서 리스트로 만들어
-# 2. map(변환할 자료형, 변수) : 자료형을 바꿔주는 함수
-# 3. insert(위치, 값) : 리스트의 해당 위치에 값 삽입
-# 4. '구분자'.join(리스트) : 해당 리스트를 [0]구분자[1]구분자 ... 식으로 반환한다, 리스트의 요소는 str이여야함
-# 5. round(값, 자리수) : 반올림 하는 함수
-# 6. sys.stdin.readline() : input함수에 비해 빠르다, 원인은 prompt message와 개행문자 연산때문
-# 7. sort(key=기준값) : key값을 기준으로 정렬된다. 보통 람다와 같이쓰임
-#
-# # pypy3 vs python3
-#
-# >### 1. pypy3
-# >실행시 자주 쓰이는 코드를 캐싱, 실행속도 빠름, 메모리효율 낮음
-# >### 2. python3
-# >캐싱을 안함, 실행속도 느림, 메모리효율 좋음
+def dfs(graph: list, ):
+    pass
+
+def bfs():
+    pass
+
+import sys
+# N = 정점수, M = 간선수, V = 정점 번호
+N, M, V = map(int, sys.stdin.readline().split())
+
+# 그래프 제작 List의 인덱스와 정점넘버를 맞추기 위해서 N + 1을 한다.
+graph = [[] for i in range(N + 1)]
+for i in range(M):
+    a, b = map(int, sys.stdin.readline().split())
+    graph[a].append(b)
+    graph[b].append(a)
+
+# 방문 순서 , if vist[i] == 0일 경우에만 순서 업데이트 하는 형식으로
+vist = [0] * (N + 1)
+# DFS, BFS 출력
+
+
+# for i in range()
