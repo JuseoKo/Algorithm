@@ -9,8 +9,8 @@ n = 4 , 11
 import sys
 
 n = int(sys.stdin.readline())
-arr = [1, 3]+[0]*1000
+arr = [1, 3] + [0] * 1000
 for i in range(2, n):
-    arr[i] = arr[i-1]+2*arr[i-2]
+    arr[i] = arr[i - 1] + 2 * arr[i - 2]
 
-print(arr[n-1]%10007)
+print(arr[n - 1] % 10007)

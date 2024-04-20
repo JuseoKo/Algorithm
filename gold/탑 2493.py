@@ -23,4 +23,4 @@ for i in range(int(N)):
     stack.append([i, int(top[i])])
 
 
-print(' '.join(map(str, result)))
+print(" ".join(map(str, result)))

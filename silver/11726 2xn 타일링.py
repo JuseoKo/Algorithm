@@ -9,9 +9,10 @@ n = 5 , 8
 """
 
 import sys
-n = int(sys.stdin.readline())
-arr = [1, 2] + [0]*1000
-for i in range(2, n):
-    arr[i] = arr[i-1]+arr[i-2]
 
-print(arr[n-1]%10007)
+n = int(sys.stdin.readline())
+arr = [1, 2] + [0] * 1000
+for i in range(2, n):
+    arr[i] = arr[i - 1] + arr[i - 2]
+
+print(arr[n - 1] % 10007)

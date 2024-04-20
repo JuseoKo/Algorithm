@@ -1,5 +1,5 @@
 def solution(numbers, target):
-    result = [0]  #계산 결과
+    result = [0]  # 계산 결과
 
     for num in numbers:
         calc = []

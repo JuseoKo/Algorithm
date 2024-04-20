@@ -2,7 +2,7 @@ import sys
 
 n = int(sys.stdin.readline().rstrip())
 num = list(map(int, sys.stdin.readline().split()))
-res = [-1]*n
+res = [-1] * n
 stack = [0]
 
 for i in range(1, n):
@@ -11,4 +11,4 @@ for i in range(1, n):
     stack.append(i)
 
 for i in range(len(res)):
-    print(res[i], end=' ')
+    print(res[i], end=" ")

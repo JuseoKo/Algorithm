@@ -18,34 +18,39 @@ G . .
 
 """
 import sys
+
 n = int(sys.stdin.readline())
-#0 = 부모 노드 , 1 = 왼쪽 자식 노드, 2 = 오른쪽 자식 노드
+# 0 = 부모 노드 , 1 = 왼쪽 자식 노드, 2 = 오른쪽 자식 노드
 tree = {}
 for i in range(n):
-    root, left, right = sys.stdin.readline().rstrip().split(' ')
+    root, left, right = sys.stdin.readline().rstrip().split(" ")
     tree[root] = [left, right]
 # print(tree)
 
+
 def preorder(root):
-    if root != '.':
-        print(root, end='')
+    if root != ".":
+        print(root, end="")
         preorder(tree[root][0])
         preorder(tree[root][1])
 
+
 def inorder(root):
-    if root != '.':
+    if root != ".":
         inorder(tree[root][0])
-        print(root, end='')
+        print(root, end="")
         inorder(tree[root][1])
 
+
 def postorder(root):
-    if root != '.':
+    if root != ".":
         postorder(tree[root][0])
         postorder(tree[root][1])
-        print(root, end='')
+        print(root, end="")
 
-preorder('A')
+
+preorder("A")
 print()
-inorder('A')
+inorder("A")
 print()
-postorder('A')
+postorder("A")

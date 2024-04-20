@@ -1,19 +1,20 @@
-#다익스트제라 알고리즘
-#시작점에서 출발하는 모든 간선의 수를 구한다
-#시작점에서 가장 가까운 곳에서 출발하는 모든 간선의 수를 구한다
-#이를 반복한다
+# 다익스트제라 알고리즘
+# 시작점에서 출발하는 모든 간선의 수를 구한다
+# 시작점에서 가장 가까운 곳에서 출발하는 모든 간선의 수를 구한다
+# 이를 반복한다
 # 입력 : 정점 V , 간선 E 수
 # 둘째줄엔 시작되는 정점의 번호
 # 셋째줄엔 v -> v 로 가는 간선의 수w를 나타낸다
 # 시작지점부터 최단경로를 표기하고 없는경우 INF를 표기한다
 import sys
-num = sys.stdin.readline().rstrip().split(' ')
+
+num = sys.stdin.readline().rstrip().split(" ")
 v = sys.stdin.readline().rstrip()
 e = []
-#결과
-arr = [11]*int(num[0])
+# 결과
+arr = [11] * int(num[0])
 for i in range(int(num[1])):
-    e.append(sys.stdin.readline().rstrip().split(' '))
+    e.append(sys.stdin.readline().rstrip().split(" "))
 """
 첫재줄 채운다
 둘째줄을 채운다 (조건 : 기존값 1->3 가는방법과 1->2 + 2->3 가는 방법을 비교하고 더 작은값을 입력) 
